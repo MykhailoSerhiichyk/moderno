@@ -342,7 +342,7 @@
 
             .advantages__item-image {
 
-                g {
+                path {
                     fill: #ffffff;
                 }
             }
@@ -377,7 +377,7 @@
 .icosvg-1 {
 
     svg {
-        width: 50px;
+        width: 70px;
     }
 }
 
@@ -391,7 +391,7 @@
 .icosvg-3 {
 
     svg {
-        width: 86px;
+        width: 70px;
     }
 }
 
@@ -444,6 +444,40 @@
    // end author
 
    // start tutorial
+
+.tutorial {
+    padding: 60px 0 120px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 370px;
+        width: 100%;
+    }
+}
+
+.tutorial__item {
+
+    &-image {
+        min-height: 270px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &-title {
+        font-size: 24px;
+        text-align: center;
+        background-color: #f8f8f8;
+        @include f700;
+        padding: 30px 10px;
+        color: $bg;
+
+    }
+}
 
 
 
