@@ -50,10 +50,9 @@ body {
 
 .title {
     color: $bg;
-    font-weight: 700;
     font-size: 36px;
     line-height: 60px;
-    font-family: 'Roboto', sans-serif;
+    @include f700;
     margin-bottom: 30px;
     text-align: center;
 }
