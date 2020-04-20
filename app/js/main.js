@@ -45,7 +45,36 @@ $(function(){
       dots: true,
       slidesToShow: 4,
       slidesToScroll: 4,
-      arrows: false
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 1900,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 1001,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 664,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+      ]
   });
 
   $('.product-one__tabs .tab, .settings__tabs .tab').on('click', function(event) {
